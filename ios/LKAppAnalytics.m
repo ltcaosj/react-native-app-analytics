@@ -1,14 +1,12 @@
-#import "LKAppAnalytics.h"
+#import <Foundation/Foundation.h>
+#import "React/RCTViewManager.h"
 
-
-@implementation LKAppAnalytics
-
-RCT_EXPORT_MODULE()
-
-RCT_EXPORT_METHOD(sampleMethod:(NSString *)stringArgument numberParameter:(nonnull NSNumber *)numberArgument callback:(RCTResponseSenderBlock)callback)
-{
-    // TODO: Implement some actually useful functionality
-	callback(@[[NSString stringWithFormat: @"numberArgument: %@ stringArgument: %@", numberArgument, stringArgument]]);
-}
-
+@interface RCT_EXTERN_MODULE(LKAppAnalytics, RCTViewManager)
+ RCT_EXTERN_METHOD(
+                   setCurrentScreen:(NSString *)screenName
+ )
+RCT_EXTERN_METHOD(
+                  logEvent:(NSString *)eventName
+                  parameters: NSDictionary
+)
 @end

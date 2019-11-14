@@ -10,4 +10,9 @@ export const logEvent = (eventName, parameters) => {
     LKAppAnalytics.logEvent(eventName, parameters)
 };
 
+export const Analytics = {
+    setCurrentScreen,
+    logEvent
+}
+
 export { LKAppAnalytics };

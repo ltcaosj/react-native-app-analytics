@@ -30,7 +30,7 @@ class LKAppAnalytics: RCTEventEmitter {
    }
     
     @objc
-    func logEvent(_ eventName : String, parameters: Dictionary) -> Void {
+    func logEvent(_ eventName : String, parameters: [String: Any]) -> Void {
         Analytics.logEvent(eventName, parameters: parameters)
     }
 }

@@ -1,5 +1,7 @@
 package lightkits.analytics;
 
+import android.app.Activity;
+
 import androidx.annotation.Nullable;
 
 import com.facebook.react.bridge.Arguments;

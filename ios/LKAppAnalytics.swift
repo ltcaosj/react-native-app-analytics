@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseAnalytics
 
 @objc(LKAppAnalytics)
 class LKAppAnalytics: RCTEventEmitter {

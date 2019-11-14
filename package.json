@@ -1,0 +1,33 @@
+{
+  "name": "react-native-app-analytics",
+  "title": "React Native App Analytics",
+  "version": "1.0.0",
+  "description": "TODO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ltcaosj/react-native-app-analytics.git",
+    "baseUrl": "https://github.com/ltcaosj/react-native-app-analytics"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": {
+    "name": "Long Cao",
+    "email": "ltcaosj@gmail.com"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-native": ">=0.61.2"
+  },
+  "devDependencies": {
+    "react": "^16.9.0",
+    "react-native": "^0.61.2"    
+  }
+}

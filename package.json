@@ -1,7 +1,7 @@
 {
-  "name": "react-native-app-analytics",
+  "name": "@react-native-lightkits/app-analytics",
   "title": "React Native App Analytics",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "TODO",
   "main": "index.js",
   "scripts": {

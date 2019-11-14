@@ -2,4 +2,8 @@ import { NativeModules } from 'react-native';
 
 const { LKAppAnalytics } = NativeModules;
 
-export default LKAppAnalytics;
+export const setCurrentScreen = screenName => {
+    
+};
+
+export { LKAppAnalytics };

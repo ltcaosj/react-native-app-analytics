@@ -26,9 +26,15 @@ public class LKAppAnalyticsModule extends ReactContextBaseJavaModule {
         return "LKAppAnalytics";
     }
 
-    @ReactMethod
-    public void setCurrentScreen(String screenName) {
-        mFirebaseAnalytics.setCurrentScreen(this.getCurrentActivity(), screenName, null);
+     @ReactMethod
+    public void setCurrentScreen(final String screenName) {
+        final Activity currentActivity = this.getCurrentActivity();
+        this.getCurrentActivity().runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                mFirebaseAnalytics.setCurrentScreen(currentActivity,  screenName, null);
+            }
+        });
     }
 
     @ReactMethod

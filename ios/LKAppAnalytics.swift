@@ -24,7 +24,9 @@ class LKAppAnalytics: RCTEventEmitter {
    
    @objc
    func setCurrentScreen(_ screenName : String) -> Void {
+     DispatchQueue.main.async(execute: {
         Analytics.setScreenName(screenName, screenClass: nil)
+     })        
    }
     
     @objc
